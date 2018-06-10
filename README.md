@@ -1,9 +1,9 @@
 
-# Angular Issue 24024
+# Angular Issue 24398
 
-When using `program.emit` in `ngtools api2` and having a clear typescript error, the error is no emitted. It is only emitted when using `noEmitOnError` flag, however it seems that the `noEmitOnError` is not being honoured as files are still being outputted.
+When using `program.emit` in `ngtools api2` and having a clear typescript error, file are still emitted when using `noEmitOnError`. 
 
-This is to illustrate issue https://github.com/angular/angular/issues/24024
+This is to illustrate issue https://github.com/angular/angular/issues/24398
 
 To view the issue:
 ```

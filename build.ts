@@ -15,7 +15,8 @@ const options = {
 	flatModuleOutFile: 'test.js',
 	fullTemplateTypeCheck: true,
 	skipTemplateCodegen: true,
-	strictMetadataEmit: true
+	strictMetadataEmit: true,
+	noEmitOnError: true
 };
 
 const host = ng.createCompilerHost({ options });
@@ -28,4 +29,4 @@ const program = ng.createProgram({
 
 
 const result = program.emit({});
-console.log(ng.formatDiagnostics(result.diagnostics));
+console.error(ng.formatDiagnostics(result.diagnostics));
